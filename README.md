@@ -48,6 +48,8 @@
 
 ![Untitled](https://user-images.githubusercontent.com/52296323/155935230-fcf609b5-f54b-40ea-ad6e-359cce7be0d9.png)
 
+| 이름 | 설명 |
+| --- | --- |
 | View | 사용자가 바라보는 데스크톱 애플리케이션(electron, typescript)으로, 계약 추천을 받기 위한 파일 업로드 및 계약 추천 보고서의 출력의 역할을 한다. |
 | Server | 해당 추천 프로세스에는 크기가 큰 데이터의 입출력, 행렬분해 등과 같은 Client-Side에서 View 처리와 동반하기에는 자원소모가 큰 로직들이 포함되어 있다. 실시간 처리 확인 과정에서 끊김없는 View의 업데이트를 보여주기 위해 View와 소켓이 연결된 서버(node.js, typescript)를 두었다. 사용자의 입력 처리, 추천 프로세스 프로그램 실행, 실시간 처리 과정 알림의 역할을 한다. |
 | Processing Program | 실질적인 추천 프로세스가 실행되는 프로그램(python)이다. 서버가 사용자의 입력처리를 끝내면, child_process library에 의해 실행이 된다. |
