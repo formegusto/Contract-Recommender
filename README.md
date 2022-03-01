@@ -61,7 +61,7 @@
 
 > 엑셀을 읽는 작업으로, 서버 측에서는 multer library를 통해 파일을 저장하고, Database에 해당 정보를 저장한다. 이후, 저장된 정보를 process program의 매개변수로 전달하여, process program은 해당 정보를 가지고, 추천 프로세스의 진행을 시작한다.
 
-![Untitled 1](https://user-images.githubusercontent.com/52296323/155935253-07b265d3-26d2-4357-a7a7-f598a00ad26d.png)
+<img width="1172" alt="스크린샷 2022-03-01 오후 2 50 33" src="https://user-images.githubusercontent.com/52296323/156112749-b7f93487-07cb-4cac-a063-7dc8dc0af675.png">
 
 ![Untitled 2](https://user-images.githubusercontent.com/52296323/155935271-8b1b5209-1cf0-4e6a-8975-e31bafe32b7b.png)
 
