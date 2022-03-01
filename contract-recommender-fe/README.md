@@ -90,5 +90,3 @@
 ![Untitled 11](https://user-images.githubusercontent.com/52296323/156113005-185ecbc7-9315-43cf-a6c9-45e7f1ba5ba3.png)
 
 ![Untitled 12](https://user-images.githubusercontent.com/52296323/156113014-70d99dec-46b5-4cc0-bcb2-ff5d3ed6e3d2.png)
-
-![Untitled 9](https://user-images.githubusercontent.com/52296323/156112992-ee56155c-c548-41cc-95cf-91ecbc1759b6.png)
