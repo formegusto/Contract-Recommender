@@ -23,7 +23,7 @@ function AlertDrawer({ drawer, hideDrawer }: Props) {
       size="sm"
     >
       <DrawerOverlay />
-      <DrawerContent bg="modebox">
+      <DrawerContent bg="modebox" overflowY="scroll">
         <Box padding="8px">
           <IconButton
             fontSize="h6"
