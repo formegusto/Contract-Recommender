@@ -17,7 +17,7 @@ const createWindow = () => {
       // node환경처럼 사용하기
       nodeIntegration: true,
       // 개발자도구
-      devTools: isDev,
+      // devTools: isDev,
     },
     titleBarStyle: "hidden",
   });

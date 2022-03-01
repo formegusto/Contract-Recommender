@@ -281,7 +281,7 @@ function RecoReportComponent({
             해당 아파트는
             <br />
             <Text className="usage" as="span" color={graph.green[50]}>
-              <b>{usageToName[simAnalysis!.analysisData.histWin]}</b>
+              <b>{usageToName[meanAnalysis!.histWin]}</b>
             </Text>{" "}
             가구 쪽에
             <br />

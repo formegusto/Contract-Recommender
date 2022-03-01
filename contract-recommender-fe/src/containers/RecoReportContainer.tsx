@@ -6,7 +6,15 @@ import RecoReportSkeleton from "../components/report/RecoReportSkeleton";
 import ProcessConnector from "../store/process/connector";
 
 type Props = ConnectedProps<typeof ProcessConnector>;
-function RecoReportContainer({ report, getProcess, initProcess }: Props) {
+function RecoReportContainer({
+  report: originalReport,
+  getProcess,
+  initProcess,
+  ui: { alert },
+  confirmAlert,
+}: Props) {
+  const [reportId, setReportId] = React.useState<string | null>(null);
+  const [report, setReport] = React.useState(originalReport);
   const [loading, setLoading] = React.useState<boolean>(true);
   const { state } = useLocation() as any;
 
@@ -19,12 +27,37 @@ function RecoReportContainer({ report, getProcess, initProcess }: Props) {
   }, [getProcess, state]);
 
   React.useEffect(() => {
-    if (report) {
+    if (originalReport) {
+      setReport(originalReport);
+    }
+  }, [originalReport]);
+
+  React.useEffect(() => {
+    if (originalReport && !reportId) {
       setTimeout(() => {
+        const { id } = state;
+
         setLoading(false);
+        setReportId(id);
       }, 1500);
     }
-  }, [report]);
+  }, [originalReport, state, reportId]);
+
+  const changeReport = React.useCallback(async () => {
+    confirmAlert();
+    const { id } = state;
+
+    getProcess(id);
+  }, [confirmAlert, getProcess, state]);
+
+  React.useEffect(() => {
+    if (alert) {
+      if (alert.id === reportId) {
+        changeReport();
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [alert, reportId]);
 
   React.useEffect(() => {
     return () => {
