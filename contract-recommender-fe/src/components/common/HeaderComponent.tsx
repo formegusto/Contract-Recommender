@@ -83,7 +83,7 @@ function HeaderComponent() {
     >
       {pathname === "/" ? (
         <Text fontSize="h4" fontWeight="bold" color="modern.200">
-          Contract Recomment System
+          Contract Recommend System
         </Text>
       ) : (
         <IconButton
