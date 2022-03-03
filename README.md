@@ -1,5 +1,8 @@
 # 아파트 전기계약 추천 시스템
 
+- [프론트 엔드 주요개발내용](https://github.com/formegusto/contract-recommender/tree/master/contract-recommender-fe)
+- [백 엔드 및 파이썬 추천 프로그램 주요개발내용](https://github.com/formegusto/contract-recommender/tree/master/contract-recommender-be)
+
 # 개요
 
 > **아파트 전기계약으로는 단일계약과 종합계약으로 구분이 된다.**
