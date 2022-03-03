@@ -1,6 +1,6 @@
 # 아파트 전기계약 추천 시스템 / Back-End
 
-> **stack : node.js, typescript. mongoose, socket-io ,express, python, numpy, pandas, scikit-learn**
+> **stack : node.js, typescript, mongoose, socket-io ,express, python, numpy, pandas, scikit-learn**
 
 > **추천 프로그램 목표**
 
